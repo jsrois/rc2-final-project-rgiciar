@@ -1,8 +1,2 @@
-# Ideas para proyecto final
-
-## Web para mi negocio de papelería de bodas
-Página enfocada a novios o personas que organizan bodas. En esta página se podría comprar y gestionar la papelería de una boda, desde las invitaciones o save the date digital hasta la papelería del día de la boda como las minutas o etiquetas de detalles.
-También la web sirve para alojar las distintas páginas de los novios donde los invitados podrán acceder para confirmar asitencia o ver la información de la boda (ubicación, horario...).
-
-## App para Karen
-App para dueñas de gatos. Servirá como cartilla digital de tu gato, donde podrás guardar y consultar la información que quieras, calendarios de vacunas o desparasitación... Sección de gastos. También puedes ver información de diferentes temas relacionados con gatos.
+# Karen
+Karen, tu asistente virtual... y la de tu gato. Con esta app móvil, tendrás todo lo que necesitas para cuidar de tu gato en un solo lugar. Utiliza Karen como una cartilla digital, donde puedes guardar toda la información que desees y consultarla estés donde estés. Karen te recordará cuándo debes vacunar a tu gato y cuándo desparasitarlo. Además, registra todos los gastos y lleva un seguimiento. Consulta a Karen si una planta es catfriendly, o por qué a tu gato le encantan las aceitunas. Karen simplifica tu vida y te convierte en la compañera que todo gato desearía.
