@@ -1,0 +1,35 @@
+html {
+    box-sizing: border-box; /* El ancho y la altura de un elemento incluirán el relleno y el borde, pero no los márgenes */
+    font-size: 62.5%; /* Establece 1rem a 10px */
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    /* outline: red solid 1px; */
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Stem-ExtraLight, Helvetica, sans-serif;
+    font-size: 1.6rem; /* 16px */
+    line-height: 1.5;
+    color: #000; /* Color de texto predeterminado */
+  }
+  
+  /* Establece las variables de color y fuente. De esta forma creas variables y luego en css para llamar al color
+    sin necesidad de poner el codigo pones: var(--white)*/
+  :root {
+    --black: #000;
+    --white: #fff;
+    --green: #DAFE9B;
+    --grey: #444444;
+    --stemLight: Stem-ExtraLight, Helvetica, sans-serif;
+    --stemBold: Stem-Bold, Helvetica, sans-serif;
+    --stemMedium: Stem-Medium, Helvetica, sans-serif;
+  }
