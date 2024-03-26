@@ -10,6 +10,7 @@ html {
     list-style: none;
     text-decoration: none;
     outline: none;
+    border: none;
     /* outline: red solid 1px; */
   }
   
@@ -20,6 +21,11 @@ html {
     font-size: 1.6rem; /* 16px */
     line-height: 1.5;
     color: #000; /* Color de texto predeterminado */
+    background-image: url('./core/assets/images/fondo_1.jpg');
+    background-size: cover;
+    width: auto;
+    height: 100vh;
+    overflow: hidden;
   }
   
   /* Establece las variables de color y fuente. De esta forma creas variables y luego en css para llamar al color
@@ -28,6 +34,7 @@ html {
     --black: #000;
     --white: #fff;
     --green: #DAFE9B;
+    --greendark: #B1D07B;
     --grey: #444444;
     --stemLight: Stem-ExtraLight, Helvetica, sans-serif;
     --stemBold: Stem-Bold, Helvetica, sans-serif;
