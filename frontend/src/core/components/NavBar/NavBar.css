@@ -1,0 +1,18 @@
+.navbar {
+    width: 85%;
+    height: 6rem;
+    border-radius: 4.5rem;
+    background-color: var(--grey);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3.5rem;
+    margin-top: 2.5rem;
+}
+
+.navbar img {
+    height: 3.5rem;
+    width: auto;
+    margin: 0 2.8rem;
+    cursor: pointer;
+}

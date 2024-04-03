@@ -36,6 +36,7 @@ html {
     --green: #DAFE9B;
     --greendark: #B1D07B;
     --grey: #444444;
+    --greyopacity: rgba(68, 68, 68, 0.5);
     --stemLight: Stem-ExtraLight, Helvetica, sans-serif;
     --stemBold: Stem-Bold, Helvetica, sans-serif;
     --stemMedium: Stem-Medium, Helvetica, sans-serif;

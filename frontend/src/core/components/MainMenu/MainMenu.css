@@ -1,0 +1,30 @@
+.mainMenuContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.mainMenuContainer div{
+    width: 14rem;
+    height: 16rem;
+    background-color: var(--greyopacity);
+    border-radius: 2rem;
+    margin: 1rem;
+    color: white;
+    font-size: 2rem;
+    font-family: var(--stemLight);
+    padding: 1.2rem;
+}
+
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sectionContainer img {
+    height: 5.2rem;
+    width: auto;
+    margin-bottom: 1.2rem;
+}
