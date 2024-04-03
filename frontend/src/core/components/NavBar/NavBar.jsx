@@ -10,13 +10,13 @@ import iconMenu from "../../assets/images/icon_menu.svg";
 export const NavBar = () => {
   return (
     <div className="navbar">
-        <Link to="/">
+        <Link to="/myprofile">
           <img src={iconProfile} alt="" />
         </Link>
         <Link to="/home">
           <img src={iconMenu} alt="" />
         </Link>
-        <Link to="/home">
+        <Link to="/catprofile">
           <img src={iconCat} alt="" />
         </Link>
     </div>
