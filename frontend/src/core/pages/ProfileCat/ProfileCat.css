@@ -1,0 +1,11 @@
+.profileCatContainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.profileCatContainer > .header {
+    justify-content: flex-start;
+}

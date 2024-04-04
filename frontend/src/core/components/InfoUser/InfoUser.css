@@ -1,0 +1,44 @@
+.infoUserContainer {
+  width: 34rem;
+  height: 56.6rem;
+  background-color: var(--greyopacity);
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.infoUserContainer div {
+  width: 31rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  font-family: Stem-Thin;
+  color: white;
+  padding: 10px;
+}
+
+.userData {
+  width: 31rem;
+  height: 19rem;
+  background-color: var(--grey);
+  border-radius: 4rem;
+  color: white;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.veterinaryData {
+  width: 31rem;
+  height: 28rem;
+  background-color: var(--grey);
+  border-radius: 4rem;
+  color: white;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.buttonEdit {
+  background: none;
+}

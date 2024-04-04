@@ -1,0 +1,11 @@
+.profileUserContainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.profileUserContainer > .header {
+    justify-content: flex-start;
+}
