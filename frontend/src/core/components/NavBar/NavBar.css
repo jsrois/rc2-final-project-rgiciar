@@ -23,5 +23,5 @@
 }
 
 .navbarButton:hover svg path {
-    stroke: var(--green);
-  }
+  stroke: var(--green);
+}
