@@ -1,31 +1,56 @@
 .infoCatContainer {
-    width: 34rem;
-    height: 56.6rem;
-    background-color: var(--greyopacity);
-    border-radius: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: auto;
-  }
+  width: 34rem;
+  height: 56.6rem;
+  background-color: var(--greyopacity);
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
 
-  .infoCatContainer div {
-    width: 31rem;
-    display: flex;
-    justify-content: space-between;
-    font-size: 2rem;
-    font-family: Stem-Thin;
-    color: white;
-    padding: 10px;
-  }
+.infoCatContainer div {
+  width: 31rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  font-family: Stem-Thin;
+  color: white;
+  padding: 1rem;
+}
 
-  .catData {
-    width: 31rem;
-    height: 48rem;
-    background-color: var(--grey);
-    border-radius: 4rem;
-    color: white;
-    padding: 15px;
-    margin-bottom: 15px;
-  }
+.catData {
+  width: 31rem;
+  height: 48rem;
+  background-color: var(--grey);
+  border-radius: 4rem;
+  color: white;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.catData input {
+  background-color: var(--greyLight);
+  border-radius: 0.5rem;
+  color: var(--grey);
+  padding: 0.3rem 0.6rem;
+}
+
+.catData p {
+  margin-bottom: 0.8rem;
+}
+
+.catInfoGreen {
+  color: var(--green);
+}
+
+.buttonSave {
+  background: none;
+  color: var(--green);
+  font-size: 2rem;
+}
+
+.infoCatContainer h1 {
+  font-size: 3.5rem;
+}
