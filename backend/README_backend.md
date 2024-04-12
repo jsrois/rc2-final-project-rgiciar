@@ -1,5 +1,4 @@
 ## Lanzar aplicación
 
-./mvnw spring-boot:run
-
+### Comando para lanzar el backend
 mvn spring-boot:run

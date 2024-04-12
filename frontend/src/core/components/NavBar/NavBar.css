@@ -1,3 +1,11 @@
+.navbarContainer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
 .navbar {
   width: 85%;
   height: 6rem;
@@ -23,5 +31,13 @@
 }
 
 .navbarButton:hover svg path {
+  stroke: var(--green);
+}
+
+.navbarButton.active svg rect {
+  stroke: var(--green);
+}
+
+.navbarButton.active svg path {
   stroke: var(--green);
 }
