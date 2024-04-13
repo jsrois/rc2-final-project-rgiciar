@@ -8,3 +8,6 @@
 
 ## React Router DOM
 ```npm install react-router-dom```
+
+## Gráfico Lightweight Chart
+```npm install lightweight-charts```

@@ -1,11 +1,11 @@
 import "./SectionVeterinary.css";
 
-import { InProgress } from "../../components/InProgress/InProgress";
+import { WeightChart } from "../../components/WeightChart/WeightChart";
 
 export const SectionVeterinary = () => {
   return (
     <main className="veterinaryContainer">
-      <InProgress />
+      <WeightChart />
     </main>
   )
 }
