@@ -1,6 +1,6 @@
 .inProgress {
-    width: 80%;
-    height: auto;
+    width: 85vw;
+    height: 50vh;
     color: var(--white);
     font-size: 3rem;
     display: flex;
