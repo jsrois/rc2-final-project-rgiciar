@@ -1,10 +1,14 @@
 .filesContainer {
-    width: 16rem;
+    width: 80%;
+    margin: 3rem auto;
     height: 28rem;
     border-radius: 2rem;
     background-color: white;
-    margin-top: 3rem;
-    padding: 1rem;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .fileSelectContainer {
@@ -22,5 +26,16 @@
     position: absolute;
     overflow: hidden;
     opacity: 1;
+    cursor: pointer;
+}
+
+.fileUploadButton {
+    width: 13rem;
+    height: 2.5rem;
+    border-radius: 1rem;
+    background-color: var(--green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }

@@ -15,19 +15,19 @@ export const MainMenu = () => {
           <img src={iconVeterinary} alt="" />
         </div>
       </Link>
-      <Link to="/expenses">
+      <Link to="#">
         <div className="sectionContainer">
           <p>Expenses Section</p>
           <img src={iconExpenses} alt="" />
         </div>
       </Link>
-      <Link to="/calendar">
+      <Link to="#">
         <div className="sectionContainer">
           <p>Calendar</p>
           <img src={iconCalendar} alt="" />
         </div>
       </Link>
-      <Link to="/resources">
+      <Link to="#">
         <div className="sectionContainer">
           <p>Pet Care Resources</p>
           <img src={iconResources} alt="" />
