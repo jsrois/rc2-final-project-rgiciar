@@ -1,0 +1,26 @@
+.filesContainer {
+    width: 16rem;
+    height: 28rem;
+    border-radius: 2rem;
+    background-color: white;
+    margin-top: 3rem;
+    padding: 1rem;
+}
+
+.fileSelectContainer {
+    width: 13rem;
+    height: 2.5rem;
+    border-radius: 1rem;
+    background-color: var(--green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fileSelectContainer input {
+    position: absolute;
+    overflow: hidden;
+    opacity: 1;
+    cursor: pointer;
+}

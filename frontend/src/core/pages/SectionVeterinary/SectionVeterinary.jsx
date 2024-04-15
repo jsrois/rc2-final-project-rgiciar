@@ -1,6 +1,8 @@
 import "./SectionVeterinary.css";
 
-import { WeightChart } from "../../components/WeightChart/WeightChart";
+import { WeightChart } from "../../components/VeterinaryComponents/WeightChart/WeightChart";
+import { Files } from "../../components/VeterinaryComponents/Files/Files";
+
 
 export const SectionVeterinary = () => {
   return (
@@ -11,6 +13,7 @@ export const SectionVeterinary = () => {
       <div>
         <WeightChart />
       </div>
+      <Files />
     </main>
   )
 }
