@@ -1,0 +1,29 @@
+.weightChartSection {
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.weightControl {
+    width: 29rem;
+    height: 4rem;
+    border-radius: 4.5rem;
+    color: var(--green);
+    font-size: 1.9rem;
+    background-color: var(--greyopacity);
+    margin-bottom: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weightChartContainer {
+    width: 85%;
+    height: 21rem;
+    background-color: var(--greyopacity);
+    border-radius: 2rem;
+    padding-top: 1rem;
+}

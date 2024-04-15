@@ -1,0 +1,25 @@
+.veterinaryContainer {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleSectionContainer {
+    width: 85%;
+}
+
+.titleSection {
+    width: 26rem;
+    height: 4rem;
+    border-radius: 4.5rem;
+    background-color: var(--green);
+    color: var(--grey);
+    font-size: 1.9rem;
+    text-align: center;
+    font-family: var(--stemBold);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3.8rem 0;
+}

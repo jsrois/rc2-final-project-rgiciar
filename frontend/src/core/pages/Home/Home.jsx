@@ -1,6 +1,10 @@
+import "./Home.css";
+import { MainMenu } from "../../components/MainMenu/MainMenu";
 
 export const Home = () => {
   return (
-    <div>Home</div>
+    <main className="homeContainer">
+      <MainMenu />
+    </main>
   )
 }

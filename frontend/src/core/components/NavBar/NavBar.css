@@ -1,0 +1,43 @@
+.navbarContainer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  width: 85%;
+  height: 6rem;
+  border-radius: 4.5rem;
+  background-color: var(--grey);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3.5rem;
+  margin-top: 2rem;
+}
+
+.navbarButton {
+  background: none;
+  height: 3.5rem;
+  width: auto;
+  margin: 0 2.8rem;
+  cursor: pointer;
+}
+
+.navbarButton:hover svg rect {
+  stroke: var(--green);
+}
+
+.navbarButton:hover svg path {
+  stroke: var(--green);
+}
+
+.navbarButton.active svg rect {
+  stroke: var(--green);
+}
+
+.navbarButton.active svg path {
+  stroke: var(--green);
+}
