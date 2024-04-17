@@ -33,8 +33,13 @@ export const InfoCat = () => {
     });
   };
 
-  const handleSaveClick = () => {
-    setIsEditMode(false);
+  const handleSaveClick = async () => {
+    try {
+      await axios.put(`http://localhost:8080/cat/${catInfo.id}`, catInfo);
+      setIsEditMode(false);
+    } catch (error) {
+      console.error("Error al guardar los datos:", error);
+    }
   };
 
   return (
@@ -67,7 +72,7 @@ export const InfoCat = () => {
             <p>
               Date of birth:{" "}
               <input
-                type="text"
+                type="date"
                 value={catInfo.dateOfBirth}
                 onChange={(e) => handleChange("birth", e.target.value)}
               />
@@ -102,7 +107,7 @@ export const InfoCat = () => {
                 type="text"
                 value={catInfo.features}
                 onChange={(e) =>
-                  handleChange("identificationFeatures", e.target.value)
+                  handleChange("features", e.target.value)
                 }
               />
             </p>
