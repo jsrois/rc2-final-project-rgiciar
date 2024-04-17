@@ -16,5 +16,9 @@ public class CatService {
     public Optional<Cat> findById(Integer id) {
         return catRepository.findById(id);
     }
+
+    public Cat save(Cat cat) {
+        return catRepository.save(cat);
+    }
     
 }
