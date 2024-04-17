@@ -24,5 +24,20 @@
 
 .filesContainer a {
     color: var(--grey);
-
 }
+
+.filesContainer ol {
+    margin: 1rem 2rem;
+}
+
+.pdfButton {
+    background-color: var(--green);
+    color: var(--grey);
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-family: var(--stemLight);
+    padding: 0.2rem 0.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+

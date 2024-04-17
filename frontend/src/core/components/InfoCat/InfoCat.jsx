@@ -1,22 +1,26 @@
 import "./InfoCat.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 import { IconEdit } from "../../assets/images/IconEdit.jsx";
 
 export const InfoCat = () => {
   const [isEditMode, setIsEditMode] = useState(false);
-  const [catInfo, setCatInfo] = useState({
-    name: "Briski",
-    chipId: "8728723642874268",
-    dateOfBirth: "25-03-2022",
-    gender: "Male",
-    breed: "American exotic",
-    color: "Tabby cream",
-    identificationFeatures:
-      "He is very small. His jaw is crooked, showing a fang. His tail tip is also twisted.",
-    sterilized: "Yes",
-    allergies: "All poultries",
-    healthInfo: "No",
-  });
+  const [catInfo, setCatInfo] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(
+          `http://localhost:8080/cat/1`
+        );
+        setCatInfo(response.data);
+      } catch (error) {
+        console.error("Error al obtener datos:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   const handleEditClick = () => {
     setIsEditMode(true);
@@ -56,8 +60,8 @@ export const InfoCat = () => {
               Chip ID:{" "}
               <input
                 type="text"
-                value={catInfo.chipId}
-                onChange={(e) => handleChange("chipId", e.target.value)}
+                value={catInfo.chip_id}
+                onChange={(e) => handleChange("chip_id", e.target.value)}
               />
             </p>
             <p>
@@ -65,7 +69,7 @@ export const InfoCat = () => {
               <input
                 type="text"
                 value={catInfo.dateOfBirth}
-                onChange={(e) => handleChange("dateOfBirth", e.target.value)}
+                onChange={(e) => handleChange("birth", e.target.value)}
               />
             </p>
             <p>
@@ -96,7 +100,7 @@ export const InfoCat = () => {
               Identification features:{" "}
               <input
                 type="text"
-                value={catInfo.identificationFeatures}
+                value={catInfo.features}
                 onChange={(e) =>
                   handleChange("identificationFeatures", e.target.value)
                 }
@@ -122,19 +126,19 @@ export const InfoCat = () => {
               Health information:{" "}
               <input
                 type="text"
-                value={catInfo.healthInfo}
-                onChange={(e) => handleChange("healthInfo", e.target.value)}
+                value={catInfo.health}
+                onChange={(e) => handleChange("health", e.target.value)}
               />
             </p>
           </>
         ) : (
           <>
             <p>
-              Chip ID: <span className="catInfoGreen">{catInfo.chipId}</span>
+              Chip ID: <span className="catInfoGreen">{catInfo.chip_id}</span>
             </p>
             <p>
               Date of birth:{" "}
-              <span className="catInfoGreen">{catInfo.dateOfBirth}</span>
+              <span className="catInfoGreen">{catInfo.birth}</span>
             </p>
             <p>
               Gender: <span className="catInfoGreen">{catInfo.gender}</span>
@@ -146,10 +150,7 @@ export const InfoCat = () => {
               Color: <span className="catInfoGreen">{catInfo.color}</span>
             </p>
             <p>
-              Identification features:{" "}
-              <span className="catInfoGreen">
-                {catInfo.identificationFeatures}
-              </span>
+              Identification features:{" "} <span className="catInfoGreen">{catInfo.features}</span>
             </p>
             <p>
               Sterilized:{" "}
@@ -161,7 +162,7 @@ export const InfoCat = () => {
             </p>
             <p>
               Health information:{" "}
-              <span className="catInfoGreen">{catInfo.healthInfo}</span>
+              <span className="catInfoGreen">{catInfo.health}</span>
             </p>
           </>
         )}
