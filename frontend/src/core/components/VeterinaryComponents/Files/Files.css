@@ -1,32 +1,14 @@
 .filesContainer {
-    width: 80%;
+    width: 85vw;
     margin: 3rem auto;
     height: 28rem;
     border-radius: 2rem;
     background-color: white;
-    padding: 4rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
-}
-
-.fileSelectContainer {
-    width: 13rem;
-    height: 2.5rem;
-    border-radius: 1rem;
-    background-color: var(--green);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-.fileSelectContainer input {
-    position: absolute;
-    overflow: hidden;
-    opacity: 1;
-    cursor: pointer;
+    align-items:flex-start;
 }
 
 .fileUploadButton {
@@ -38,4 +20,9 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+
+.filesContainer a {
+    color: var(--grey);
+
 }

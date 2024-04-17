@@ -42,3 +42,18 @@ html {
     --stemBold: Stem-Bold, Helvetica, sans-serif;
     --stemMedium: Stem-Medium, Helvetica, sans-serif;
   }
+
+  @font-face {
+    font-family: 'Stem-ExtraLight';
+    src: local('Stem-ExtraLight'), url('./core/assets/fonts/Stem-ExtraLight.otf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Stem-Bold';
+    src: local('Stem-Bold'), url('./core/assets/fonts/Stem-Bold.otf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Stem-Medium';
+    src: local('Stem-Medium'), url('./core/assets/fonts/Stem-Medium.otf') format('truetype');
+  }
