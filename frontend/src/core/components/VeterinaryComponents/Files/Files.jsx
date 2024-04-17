@@ -30,7 +30,7 @@ export const Files = () => {
             <a
               href={URL.createObjectURL(file)}
               target="_blank"
-              rel="noreferrer" // Añadimos rel="noreferrer" para seguridad
+              rel="noreferrer" // Esto de rel="noreferrer" es para seguridad?
               onClick={() => handleFileClick(file)}
             >
               {file.name}

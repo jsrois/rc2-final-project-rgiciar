@@ -4,19 +4,19 @@ import { IconEdit } from "../../assets/images/IconEdit.jsx";
 
 export const InfoCat = () => {
   const [isEditMode, setIsEditMode] = useState(false);
-   const [catInfo, setCatInfo] = useState({
-     name: "Briski",
-     chipId: "8728723642874268",
-     dateOfBirth: "25-03-2022",
-     gender: "Male",
-     breed: "American exotic",
-     color: "Tabby cream",
-     identificationFeatures: "He is very small. His jaw is crooked, showing a fang. His tail tip is also twisted.",
-     sterilized: "Yes",
-     allergies: "All poultries",
-     healthInfo: "No"
-   });
-
+  const [catInfo, setCatInfo] = useState({
+    name: "Briski",
+    chipId: "8728723642874268",
+    dateOfBirth: "25-03-2022",
+    gender: "Male",
+    breed: "American exotic",
+    color: "Tabby cream",
+    identificationFeatures:
+      "He is very small. His jaw is crooked, showing a fang. His tail tip is also twisted.",
+    sterilized: "Yes",
+    allergies: "All poultries",
+    healthInfo: "No",
+  });
 
   const handleEditClick = () => {
     setIsEditMode(true);
