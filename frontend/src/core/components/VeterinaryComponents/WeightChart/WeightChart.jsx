@@ -84,7 +84,10 @@ export const WeightChart = () => {
 
   return (
     <section className="weightChartSection">
-      <div className="weightControl">Weight control</div>
+      <div className="weightHeader">
+        <div className="weightControl">Weight control</div>
+        <button>Add</button>
+      </div>
       <div className="weightChartContainer">
         <div ref={chartContainerRef}></div>
       </div>
