@@ -53,14 +53,3 @@ Le encantan las plantas pero ha tenido alguna mala experiencia con alguna planta
 Además viaja ocasionalmente y le gustaría tener una forma de compartir rápidamente la información de cuidado de Briski con su familia que es quien le cuida durante sus ausencias.
 
 Se encarga de los cuidados veterinarios de los gatos de su familia por lo que le gustaría poder tener diferentes perfiles para guardar los cuidados de los otros gatos.
-
-## Acceso a Mural
-
-User Story Mapping y User Journey
-
-https://app.mural.co/t/rc2finalprojectrgiciar3273/m/rc2finalprojectrgiciar3273/1710695772806/5ec53b575cacd4cdb4feb9bfcdc7f735c145c81a?sender=ub1a456b3bde48f4e01219420
-
-
-## Acceso al diseño en Figma
-
-https://www.figma.com/proto/EKKHwb78rPrKFP3J1S0kxB/App-para-Karen?page-id=1%3A3&node-id=1-7&starting-point-node-id=1%3A7&mode=design&t=t43TXChuq9c4ELXp-1
