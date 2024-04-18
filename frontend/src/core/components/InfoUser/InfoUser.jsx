@@ -1,19 +1,26 @@
 import "./InfoUser.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IconEdit } from "../../assets/images/IconEdit.jsx";
+import axios from "axios";
 
 export const InfoUser = () => {
   const [isEditMode, setIsEditMode] = useState(false);
-  const [userInfo, setUserInfo] = useState({
-    name: "Iciar Rodríguez",
-    phone: "435 675 988",
-    direction: "Feline Avenue, nº123 - Meowtown, CA 90210",
-    centerName: "Veterinary Clinic",
-    vetName: "Mia Whiskers",
-    vetPhone: "412 635 021",
-    emergencyPhone: "433 627 372",
-    vetDirection: "Purrfect Place, nº21 - Whisker City, NY 10001",
-  });
+  const [userInfo, setUserInfo] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(
+          `http://localhost:8080/user/1`
+        );
+        setUserInfo(response.data);
+      } catch (error) {
+        console.error("Error al obtener datos:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   const handleEditClick = () => {
     setIsEditMode(true);
@@ -75,8 +82,8 @@ export const InfoUser = () => {
               Center Name:{" "}
               <input
                 type="text"
-                value={userInfo.centerName}
-                onChange={(e) => handleChange("centerName", e.target.value)}
+                value={userInfo.centername}
+                onChange={(e) => handleChange("centername", e.target.value)}
               />
             </p>
             <p>Veterinary Info:</p>
@@ -84,32 +91,32 @@ export const InfoUser = () => {
               Veterinary Name:{" "}
               <input
                 type="text"
-                value={userInfo.vetName}
-                onChange={(e) => handleChange("vetName", e.target.value)}
+                value={userInfo.vetname}
+                onChange={(e) => handleChange("vetname", e.target.value)}
               />
             </p>
             <p>
               Phone:{" "}
               <input
                 type="text"
-                value={userInfo.vetPhone}
-                onChange={(e) => handleChange("vetPhone", e.target.value)}
+                value={userInfo.vetphone}
+                onChange={(e) => handleChange("vetphone", e.target.value)}
               />
             </p>
             <p>
               Emergency Phone:{" "}
               <input
                 type="text"
-                value={userInfo.emergencyPhone}
-                onChange={(e) => handleChange("emergencyPhone", e.target.value)}
+                value={userInfo.emergencyphone}
+                onChange={(e) => handleChange("emergencyphone", e.target.value)}
               />
             </p>
             <p>
               Direction:{" "}
               <input
                 type="text"
-                value={userInfo.vetDirection}
-                onChange={(e) => handleChange("vetDirection", e.target.value)}
+                value={userInfo.vetdirection}
+                onChange={(e) => handleChange("vetdirection", e.target.value)}
               />
             </p>
           </>
@@ -129,22 +136,22 @@ export const InfoUser = () => {
             <p>Veterinary Info:</p>
             <p>
               Center Name:{" "}
-              <span className="catInfoGreen">{userInfo.centerName}</span>
+              <span className="catInfoGreen">{userInfo.centername}</span>
             </p>
             <p>
               Veterinary Name:{" "}
-              <span className="catInfoGreen">{userInfo.vetName}</span>
+              <span className="catInfoGreen">{userInfo.vetname}</span>
             </p>
             <p>
-              Phone: <span className="catInfoGreen">{userInfo.vetPhone}</span>
+              Phone: <span className="catInfoGreen">{userInfo.vetphone}</span>
             </p>
             <p>
               Emergency Phone:{" "}
-              <span className="catInfoGreen">{userInfo.emergencyPhone}</span>
+              <span className="catInfoGreen">{userInfo.emergencyphone}</span>
             </p>
             <p>
               Direction:{" "}
-              <span className="catInfoGreen">{userInfo.vetDirection}</span>
+              <span className="catInfoGreen">{userInfo.vetdirection}</span>
             </p>
           </>
         )}
