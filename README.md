@@ -16,12 +16,13 @@ Karen, tu asistente virtual... y la de tu gato. Con esta app móvil, tendrás to
 [![My Skills](https://skillicons.dev/icons?i=vscode)](https://skillicons.dev)
 
 ### Diseño:
-[![My Skills](https://skillicons.dev/icons?i=figma,ai)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=figma,ai,ps,)](https://skillicons.dev)
 
 ### Otras
 
 - React Router
 - Lightweight Charts
+- React-pdf
 
 
 ## Cómo lanzar el proyecto
