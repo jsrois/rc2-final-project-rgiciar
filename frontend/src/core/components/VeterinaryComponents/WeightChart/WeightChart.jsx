@@ -1,25 +1,33 @@
 import axios from "axios";
+import { createChart } from "lightweight-charts"; // Agrega esta línea de importación
 import "./WeightChart.css";
-import { createChart } from "lightweight-charts";
 import { useEffect, useRef, useState } from "react";
+import { WeightModal } from "./WeightModal";
 
 export const WeightChart = () => {
   const chartContainerRef = useRef();
   const [weightData, setWeightData] = useState([]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [reload, setReload] = useState(true);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get(`http://localhost:8080/weight`);
-        const sortedData = response.data.sort((a, b) => new Date(a.date) - new Date(b.date));
-        setWeightData(sortedData);
-      } catch (error) {
-        console.error("Error al obtener datos:", error);
-      }
-    };
-  
-    fetchData();
-  }, []);
+    if (reload) {
+      const fetchData = async () => {
+        try {
+          const response = await axios.get(`http://localhost:8080/weight`);
+          const sortedData = response.data.sort(
+            (a, b) => new Date(a.date) - new Date(b.date)
+          );
+          setWeightData(sortedData);
+          setReload(false);
+        } catch (error) {
+          console.error("Error al obtener datos:", error);
+        }
+      };
+      fetchData();
+    }
+    
+  }, [reload]);
 
   useEffect(() => {
     if (weightData.length > 0) {
@@ -88,15 +96,43 @@ export const WeightChart = () => {
     }
   }, [weightData]);
 
+  const handleAddWeight = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleSaveWeight = async (weight) => {
+    try {
+      const currentDate = new Date().toISOString().split("T")[0];
+      await axios.post(`http://localhost:8080/weight`, {
+        date: currentDate,
+        weight: weight,
+      });
+      setReload(true)
+    } catch (error) {
+      console.error("Error saving weight:", error);
+    }
+  };
+
   return (
     <section className="weightChartSection">
       <div className="weightHeader">
         <div className="weightControl">Weight control</div>
-        <button>Add</button>
+        <button onClick={handleAddWeight}>Add</button>
       </div>
       <div className="weightChartContainer">
         <div ref={chartContainerRef}></div>
       </div>
+      {isModalOpen && (
+        <WeightModal
+          isOpen={isModalOpen}
+          onClose={handleCloseModal}
+          onSave={handleSaveWeight}
+        />
+      )}
     </section>
   );
 };

@@ -21,5 +21,9 @@ public class WeightService {
     public Optional<Weight> findById(Integer id) {
         return weightRepository.findById(id);
     }
+
+    public Weight save(Weight weight) {
+        return weightRepository.save(weight);
+    }
     
 }

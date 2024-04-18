@@ -13,13 +13,13 @@ export const NavBar = () => {
     <div className="navbarContainer">
       <div className="navbar">
         <Link to="/myprofile">
-          <button className={location.pathname === '/myprofile' ? 'navbarButton active' : 'navbarButton'}><IconProfile /></button>
+          <button data-testid="myprofile-button" className={location.pathname === '/myprofile' ? 'navbarButton active' : 'navbarButton'}><IconProfile /></button>
         </Link>
         <Link to="/home">
-          <button className={location.pathname === '/home' ? 'navbarButton active' : 'navbarButton'}><IconMenu /></button>
+          <button data-testid="home-button" className={location.pathname === '/home' ? 'navbarButton active' : 'navbarButton'}><IconMenu /></button>
         </Link>
         <Link to="/catprofile">
-          <button className={location.pathname === '/catprofile' ? 'navbarButton active' : 'navbarButton'}><IconCat /></button>
+          <button data-testid="catprofile-button" className={location.pathname === '/catprofile' ? 'navbarButton active' : 'navbarButton'}><IconCat /></button>
         </Link>
       </div>
     </div>
